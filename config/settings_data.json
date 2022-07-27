@@ -245,10 +245,18 @@
             "settings": {
               "collection_pro": "top-software-engineers"
             }
+          },
+          "8afef182-93b6-47ce-8b47-6a4d76f4abff": {
+            "type": "colection_products",
+            "settings": {
+              "collection_pro": "top-quality-assurance-engineers",
+              "productLimit": 6
+            }
           }
         },
         "block_order": [
-          "bcc04111-6182-4887-9842-a7f80b53964b"
+          "bcc04111-6182-4887-9842-a7f80b53964b",
+          "8afef182-93b6-47ce-8b47-6a4d76f4abff"
         ],
         "settings": {
         }
