@@ -239,6 +239,17 @@
       },
       "site-collections": {
         "type": "site-collections",
+        "blocks": {
+          "bcc04111-6182-4887-9842-a7f80b53964b": {
+            "type": "colection_products",
+            "settings": {
+              "collection_pro": "top-software-engineers"
+            }
+          }
+        },
+        "block_order": [
+          "bcc04111-6182-4887-9842-a7f80b53964b"
+        ],
         "settings": {
         }
       }
