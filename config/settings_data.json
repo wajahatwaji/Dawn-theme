@@ -203,6 +203,37 @@
       },
       "featured-items": {
         "type": "featured-items",
+        "blocks": {
+          "93921bc7-d9a3-479e-aecf-f6efe098276a": {
+            "type": "item",
+            "settings": {
+              "item_title": "High-Quality Codes",
+              "item_link_text": "LEARN MORE",
+              "item_url": "\/"
+            }
+          },
+          "f76a6ba8-804e-47a1-8296-6c516c0ab098": {
+            "type": "item",
+            "settings": {
+              "item_title": "Fast Delivery Schedules",
+              "item_link_text": "LEARN MORE",
+              "item_url": "\/"
+            }
+          },
+          "2bc3b91f-3499-4307-9a06-cc0f8c4bc030": {
+            "type": "item",
+            "settings": {
+              "item_title": "Cybersecurity Oriented",
+              "item_link_text": "LEARN MORE",
+              "item_url": "\/"
+            }
+          }
+        },
+        "block_order": [
+          "93921bc7-d9a3-479e-aecf-f6efe098276a",
+          "f76a6ba8-804e-47a1-8296-6c516c0ab098",
+          "2bc3b91f-3499-4307-9a06-cc0f8c4bc030"
+        ],
         "settings": {
         }
       },
