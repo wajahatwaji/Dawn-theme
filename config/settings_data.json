@@ -126,6 +126,7 @@
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0,
@@ -189,8 +190,31 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "banner_img": "shopify:\/\/shop_images\/header-picture-01.png",
+          "banner_title": "Elegant Developers",
+          "banner_text": "ONLY WORKING AT FSL",
+          "button_label": "CONTACT US",
+          "button_url": "shopify:\/\/pages\/contact"
+        }
+      },
+      "featured-items": {
+        "type": "featured-items",
+        "settings": {
+        }
+      },
+      "site-collections": {
+        "type": "site-collections",
+        "settings": {
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
