@@ -37,50 +37,200 @@ a {
     display: inline-block;
 }
 
-/ Chrome, Safari, Edge, Opera /
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/ Firefox /
+/* Firefox */
 input[type=number] {
   -moz-appearance:textfield;
 }
 
 
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url(../fonts/playfairdisplay-bold.woff2) format('woff2'),
+         url(../fonts/playfairdisplay-bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'playfair_displayblack_italic';
+    src: url(../fonts/playfairdisplay-blackitalic.woff2) format('woff2'),
+         url(../fonts/playfairdisplay-blackitalic.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url(../fonts/playfairdisplay-bold.woff2) format('woff2'),
+         url(../fonts/playfairdisplay-bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displaybold_italic';
+    src: url(../fonts/playfairdisplay-bolditalic.woff2) format('woff2'),
+         url(../fonts/playfairdisplay-bolditalic.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url(../fonts/playfairdisplay-italic.woff2) format('woff2'),
+         url(../fonts/playfairdisplay-italic.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff2?v=1658878557') format('woff2'),
+         url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff?v=1658878557') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cambay';
+    src: url('../fonts/Cambay-Bold.woff2') format('woff2'),
+        url('../fonts/Cambay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cambay';
+    src: url('../fonts/Cambay-Italic.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff?v=1658878426') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cambay';
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff2?v=1658878427') format('woff2'),
+        url('../fonts/Cambay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff2?v=1658878737') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff?v=1658878737') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('../fonts/Domine-SemiBold.woff2') format('woff2'),
+        url('../fonts/Domine-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('../fonts/Domine-Bold.woff2') format('woff2'),
+        url('../fonts/Domine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Domine';
+    src: url('../fonts/Domine-Medium.woff2') format('woff2'),
+        url('../fonts/Domine-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.header__icons #cart-icon-bubble {
+    display: none;
+}
+.header__menu-item span {
+    font-family: 'Cambay';
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000000;
+    padding: 3px 0 0;
+}
+
+/* ---- Banner CSS Start------ */
 .banner_wrapper {
-	background: #D8BE8C;
-	padding-top: 30px;
+    background: #D8BE8C;
+    padding-top: 30px;
 }
 .banner_wrapper .inner {
-	max-width: 1220px;
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.banner_wrapper .banner_image {
-	max-width: 384px;
-	width: 100%;
+.banner_image {
+    max-width: 384px;
+    width: 100%;
 }
 .banner_wrapper .banner_image img {
 	vertical-align: middle;
 }
-.banner_wrapper .banner_text {
-	max-width: 665px;
-	width: 100%;
+.banner_text {
+    max-width: 675px;
+    width: 100%;
 }
-.banner_wrapper .banner_text h1 {
-	font-family: 'playfair_displayregular';
-	font-size: 77px;
-	color: #000;
-	line-height: 1.1;
-	margin-bottom: 10px;
+.banner_text h1 {
+    font-family: 'playfair_displayregular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 77px;
+    line-height: 1.1;
+    color: #000000;
+    margin-bottom: 10px;
 }
 .banner_wrapper .banner_text p {
 	font-family: 'Cambay';
@@ -101,14 +251,15 @@ input[type=number] {
 	border: 2px solid #fff;
 	margin-top: 7px;
 }
+/* ---- Banner CSS End ------ */
 
-
+/* ---- Featured Items CSS Start------ */
 .featured_items {
-	padding: 100px 0 70px;
+    padding: 100px 0 70px;
 }
 .featured_items .inner {
-	max-width: 1100px;
-	width: 100%;
+    max-width: 1100px;
+    width: 100%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -116,7 +267,7 @@ input[type=number] {
 	justify-content: space-between;
 }
 .featured_items .item_detail {
-	width: 340px;
+    width: 340px;
 	height: 340px;
 	display: flex;
 	flex-wrap: wrap;
@@ -130,8 +281,8 @@ input[type=number] {
 	margin-bottom: 30px;
 }
 .featured_items .item_detail::before {
-	background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-quality.svg?v=1658875730) no-repeat;
-	background-size: contain;
+    background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-quality.svg?v=1658875730') no-repeat;
+    background-size: contain;
 	width: 209px;
 	height: 209px;
 	position: absolute;
@@ -142,15 +293,16 @@ input[type=number] {
 	opacity: 0.05;
 }
 .featured_items .item_detail:nth-child(2):before {
-	background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-delivery.svg?v=1658875730) no-repeat;
+	background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-delivery.svg?v=1658875730') no-repeat;
 	background-size: contain;
 }
 .featured_items .item_detail:nth-child(3):before {
-	background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-cybersecurity.svg?v=1658875683) no-repeat;
+	background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-cybersecurity.svg?v=1658875683') no-repeat;
 	background-size: contain;
 }
+
 .featured_items .item_detail h2 {
-	font-family: 'Domine';
+    font-family: 'Domine';
 	font-size: 36px;
 	color: #000;
 	line-height: 1.2;
@@ -166,8 +318,9 @@ input[type=number] {
 	bottom: 18px;
 }
 
-.top_enginners {
-	padding: 40px 0;
+/* ---- Add Collection CSS Start------ */
+.top_engineers {
+    padding: 40px 0;
 }
 .top_enginners .inner {
 	max-width: 1220px;
@@ -179,6 +332,7 @@ input[type=number] {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+        padding-top: 70px;
 }
 .top_enginners h2 {
 	font-family: 'playfair_displayregular';
@@ -213,6 +367,9 @@ input[type=number] {
     justify-content: space-between;
 	padding: 10px 0;
 }
+.engineers_row .engineer_detail img {
+    width: 100%;
+}
 .engineers_row .engineer_detail .engineer_info h3 {
 	font-family: 'Roboto';
 	font-weight: 300;
@@ -245,7 +402,6 @@ input[type=number] {
 	color: #fff;
 }
 
-
 .footer {
 	background: #393939;
 	padding: 20px 0;
@@ -263,6 +419,7 @@ input[type=number] {
 	line-height: 1.2;
 	color: #fff;
 }
+
 
 /*-_-_Responsiveness_-_-*/
 
