@@ -264,6 +264,26 @@
       },
       "add_collections": {
         "type": "add_collections",
+        "blocks": {
+          "f72893f0-b880-4d25-8c29-a2ec5e2ed0e1": {
+            "type": "colection_products",
+            "settings": {
+              "collection_pro": "top-software-engineers",
+              "productLimit": 6
+            }
+          },
+          "13e08b57-a170-4d8e-a364-042a291bca12": {
+            "type": "colection_products",
+            "settings": {
+              "collection_pro": "top-quality-assurance-engineers",
+              "productLimit": 6
+            }
+          }
+        },
+        "block_order": [
+          "f72893f0-b880-4d25-8c29-a2ec5e2ed0e1",
+          "13e08b57-a170-4d8e-a364-042a291bca12"
+        ],
         "settings": {
         }
       }
