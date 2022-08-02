@@ -92,8 +92,8 @@ input[type=number] {
 
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff2?v=1658878557') format('woff2'),
-         url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff?v=1658878557') format('woff');
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff2?v=1659478629') format('woff2'),
+         url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/playfairdisplay-regular.woff?v=1659478629') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -110,7 +110,7 @@ input[type=number] {
 @font-face {
     font-family: 'Cambay';
     src: url('../fonts/Cambay-Italic.woff2') format('woff2'),
-        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff?v=1658878426') format('woff');
+        url('../fonts/Cambay-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -118,8 +118,8 @@ input[type=number] {
 
 @font-face {
     font-family: 'Cambay';
-    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff2?v=1658878427') format('woff2'),
-        url('../fonts/Cambay-Regular.woff') format('woff');
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff2?v=1659478737') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Cambay-Regular.woff?v=1659478737') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -127,8 +127,8 @@ input[type=number] {
 
 @font-face {
     font-family: 'Domine';
-    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff2?v=1658878737') format('woff2'),
-        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff?v=1658878737') format('woff');
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff2?v=1659478629') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Domine-Regular.woff?v=1659478629') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -164,8 +164,8 @@ input[type=number] {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
+    src: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Roboto-Regular.woff2?v=1659478629') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/Roboto-Regular.woff?v=1659478629') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -187,18 +187,21 @@ input[type=number] {
 }
 
 
-.header__icons #cart-icon-bubble {
+.header__icon--cart .icon {
     display: none;
 }
+
 .header__menu-item span {
     font-family: 'Cambay';
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #000000;
-    padding: 3px 0 0;
+    text-transform: uppercase;
+    color: #000;
+}
+.list-menu.list-menu--inline {
+    margin: 0 0 -3px 70px;
 }
 
 /* ---- Banner CSS Start------ */
+
 .banner_wrapper {
     background: #D8BE8C;
     padding-top: 30px;
@@ -216,21 +219,19 @@ input[type=number] {
     max-width: 384px;
     width: 100%;
 }
-.banner_wrapper .banner_image img {
-	vertical-align: middle;
+.banner_image img {
+    vertical-align: middle;
 }
 .banner_text {
     max-width: 675px;
     width: 100%;
 }
-.banner_text h1 {
-    font-family: 'playfair_displayregular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 77px;
-    line-height: 1.1;
-    color: #000000;
-    margin-bottom: 10px;
+.banner_wrapper .banner_text h1 {
+	font-family: 'playfair_displayregular';
+	font-size: 77px;
+	color: #000;
+	line-height: 1.1;
+	margin-bottom: 10px;
 }
 .banner_wrapper .banner_text p {
 	font-family: 'Cambay';
@@ -251,23 +252,24 @@ input[type=number] {
 	border: 2px solid #fff;
 	margin-top: 7px;
 }
-/* ---- Banner CSS End ------ */
+
+/* ---- Banner CSS End------ */
 
 /* ---- Featured Items CSS Start------ */
 .featured_items {
-    padding: 100px 0 70px;
+    padding: 100px 0 0px;
 }
 .featured_items .inner {
     max-width: 1100px;
     width: 100%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .featured_items .item_detail {
-    width: 340px;
+	width: 340px;
 	height: 340px;
 	display: flex;
 	flex-wrap: wrap;
@@ -281,9 +283,9 @@ input[type=number] {
 	margin-bottom: 30px;
 }
 .featured_items .item_detail::before {
-    background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-quality.svg?v=1658875730') no-repeat;
+    background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-quality.svg?v=1659478590) no-repeat;
     background-size: contain;
-	width: 209px;
+    width: 209px;
 	height: 209px;
 	position: absolute;
 	top: 46%;
@@ -293,17 +295,16 @@ input[type=number] {
 	opacity: 0.05;
 }
 .featured_items .item_detail:nth-child(2):before {
-	background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-delivery.svg?v=1658875730') no-repeat;
-	background-size: contain;
+    background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-delivery.svg?v=1659478590) no-repeat;
+    background-size: contain;
 }
 .featured_items .item_detail:nth-child(3):before {
-	background: url('https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-cybersecurity.svg?v=1658875683') no-repeat;
-	background-size: contain;
+    background: url(https://cdn.shopify.com/s/files/1/0651/4314/4700/files/icon-cybersecurity.svg?v=1659478590) no-repeat;
+    background-size: contain;
 }
-
 .featured_items .item_detail h2 {
     font-family: 'Domine';
-	font-size: 36px;
+	font-size: 34px;
 	color: #000;
 	line-height: 1.2;
 	padding-bottom: 15px;
@@ -318,9 +319,10 @@ input[type=number] {
 	bottom: 18px;
 }
 
-/* ---- Add Collection CSS Start------ */
-.top_engineers {
-    padding: 40px 0;
+
+/* ---- Add Collectiopn CSS Start------ */
+.top_enginners {
+	padding: 40px 0;
 }
 .top_enginners .inner {
 	max-width: 1220px;
@@ -361,14 +363,14 @@ input[type=number] {
 	width: 30%;
 	margin-bottom: 40px;
 }
+.engineers_row .engineer_detail img {
+    width: 100%;
+}
 .engineers_row .engineer_detail .engineer_info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 	padding: 10px 0;
-}
-.engineers_row .engineer_detail img {
-    width: 100%;
 }
 .engineers_row .engineer_detail .engineer_info h3 {
 	font-family: 'Roboto';
@@ -402,6 +404,7 @@ input[type=number] {
 	color: #fff;
 }
 
+
 .footer {
 	background: #393939;
 	padding: 20px 0;
@@ -419,7 +422,6 @@ input[type=number] {
 	line-height: 1.2;
 	color: #fff;
 }
-
 
 /*-_-_Responsiveness_-_-*/
 
@@ -542,3 +544,5 @@ input[type=number] {
 		width: 100%;
 	}
 }
+
+

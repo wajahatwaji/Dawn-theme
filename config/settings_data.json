@@ -105,7 +105,6 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Welcome to our store",
               "color_scheme": "background-1",
@@ -212,77 +211,6 @@
         "block_order": [
           "bcc04111-6182-4887-9842-a7f80b53964b",
           "8afef182-93b6-47ce-8b47-6a4d76f4abff"
-        ],
-        "settings": {
-        }
-      },
-      "banner": {
-        "type": "banner",
-        "settings": {
-          "banner_img": "shopify:\/\/shop_images\/header-picture-01.png",
-          "banner_title": "Elegant Developers",
-          "banner_text": "ONLY WORKING AT FSL",
-          "button_label": "CONTACT US",
-          "button_url": "shopify:\/\/pages\/contact"
-        }
-      },
-      "featured_items": {
-        "type": "featured_items",
-        "blocks": {
-          "62ccde21-323f-40ad-9f22-c666d5aaccb5": {
-            "type": "item",
-            "settings": {
-              "item_title": "High-Quality Codes",
-              "item_link_text": "LEARN MORE",
-              "item_url": "\/"
-            }
-          },
-          "c1ed9b5c-0a0e-4f97-87ee-d541a24f6f67": {
-            "type": "item",
-            "settings": {
-              "item_title": "Fast Delivery Schedules",
-              "item_link_text": "LEARN MORE",
-              "item_url": "\/"
-            }
-          },
-          "55d09e7c-5f4f-4f5c-8ddc-6b8ebce5b699": {
-            "type": "item",
-            "settings": {
-              "item_title": "Cybersecurity Oriented",
-              "item_link_text": "LEARN MORE",
-              "item_url": "\/"
-            }
-          }
-        },
-        "block_order": [
-          "62ccde21-323f-40ad-9f22-c666d5aaccb5",
-          "c1ed9b5c-0a0e-4f97-87ee-d541a24f6f67",
-          "55d09e7c-5f4f-4f5c-8ddc-6b8ebce5b699"
-        ],
-        "settings": {
-        }
-      },
-      "add_collections": {
-        "type": "add_collections",
-        "blocks": {
-          "33443815-d374-4f78-b06d-657814f0a7fb": {
-            "type": "colection_products",
-            "settings": {
-              "collection_pro": "top-software-engineers",
-              "productLimit": 6
-            }
-          },
-          "7cd0e74e-bf7a-425f-bd38-f5500c4a1525": {
-            "type": "colection_products",
-            "settings": {
-              "collection_pro": "top-quality-assurance-engineers",
-              "productLimit": 6
-            }
-          }
-        },
-        "block_order": [
-          "33443815-d374-4f78-b06d-657814f0a7fb",
-          "7cd0e74e-bf7a-425f-bd38-f5500c4a1525"
         ],
         "settings": {
         }

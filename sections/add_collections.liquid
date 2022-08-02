@@ -1,34 +1,33 @@
 <div class="top_enginners">
     <div class="inner">
-       
-      <div class="engineers_row">
-        {% for block in section.blocks %}
-          {% if block.type == "colection_products" %}
-            <div class="top_text">
-                <h2>{{ block.settings.collection_pro.title}}</h2>
-                <p>{{ block.settings.collection_pro.description}}</p>
-            </div>
-            {% assign col_products = collections[block.settings.collection_pro].products %}
-            {% assign product_limit = block.settings.productLimit %}
-            {% for product in col_products reversed limit: product_limit %}
-              <div class="engineer_detail">
-                 <a href="{{ product.url }}">{{ product.featured_image | product_img_url:'master' |img_tag  }}</a>
-                    <div class="engineer_info">
-                      <h3>{{ product.title }}</h3>
-                      <span>{{ product.price | money }}</span>
+        <div class="engineers_row">
+            {% for block in section.blocks %}
+                {% if block.type == "colection_products" %}
+                <div class="top_text">
+                    <h2>{{ block.settings.collection_pro.title}}</h2>
+                    <p>{{ block.settings.collection_pro.description}}</p>
+                </div>
+                {% assign col_products = collections[block.settings.collection_pro].products %}
+                {% assign product_limit = block.settings.productLimit %}
+                {% for product in col_products reversed limit: product_limit %}
+                    <div class="engineer_detail">
+                        <a href="{{ product.url }}">{{ product.featured_image | product_img_url:'master' |img_tag  }}</a>
+                           <div class="engineer_info">
+                             <h3>{{ product.title }}</h3>
+                             <span>{{ product.price | money }}</span>
+                           </div>
+                           <ul>
+                             {% for productAlltag in product.tags %}
+                                <li>{{ productAlltag }}</li>
+                             {% endfor %}
+                           </ul>
                     </div>
-                    <ul>
-                      {% for productAlltag in product.tags %}
-                         <li>{{ productAlltag }}</li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-             {% endfor %}
-        {% endif %} 
-    {% endfor %}
+                    {% endfor %}
+               {% endif %} 
+           {% endfor %}
+        </div>
     </div>
-  </div>
-
+</div>
 {% schema %}
   {
     "name": "Collection Products",
@@ -57,3 +56,4 @@
     }]
   }
 {% endschema %}
+
